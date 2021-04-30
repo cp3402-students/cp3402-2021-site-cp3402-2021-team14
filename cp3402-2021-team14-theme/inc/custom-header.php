@@ -23,8 +23,8 @@ function cp3402_2021_team14_theme_custom_header_setup() {
 			'cp3402_2021_team14_theme_custom_header_args',
 			array(
 				'default-image'      => '',
-				'default-text-color' => '000000',
-				'width'              => 1000,
+				'default-text-color' => 'ffffff',
+				'width'              => 2000,
 				'height'             => 250,
 				'flex-height'        => true,
 				'wp-head-callback'   => 'cp3402_2021_team14_theme_header_style',
