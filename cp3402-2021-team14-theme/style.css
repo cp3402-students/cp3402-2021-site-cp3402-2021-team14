@@ -647,13 +647,46 @@ textarea {
 
 /* Navigation
 --------------------------------------------- */
+
+.site-header {
+	position: relative;
+	padding: 1em;
+	color: #fff;
+	background-color: #444;
+}
+
+
+
+@media screen and (min-width: $query_medium){
+    .site-header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .site-branding{
+        width: 35%;
+    }
+    .main-navigation{
+        width: 45%;
+    }
+}
+
+.site-branding{
+    min-height: 80px;
+}
+
 .main-navigation {
+    position: absolute;
 	display: block;
-	width: 100%;
+    right: 0px;
+    top: 45px;
+	width: 50%;
+	font-size: large;
+	font-weight: bold;
 }
 
 .main-navigation ul {
-	display: none;
+	display: flex;
+	justify-content: space-around;
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
@@ -691,7 +724,10 @@ textarea {
 .main-navigation li {
 	position: relative;
 }
+.main-navigation li.menu-item a {
 
+	color: #fff;
+}
 .main-navigation a {
 	display: block;
 	text-decoration: none;
@@ -715,9 +751,9 @@ textarea {
 }
 
 .site-main .comment-navigation,
-.site-main
+.site-main,
 .posts-navigation,
-.site-main
+.site-main,
 .post-navigation {
 	margin: 0 0 1.5em;
 }
