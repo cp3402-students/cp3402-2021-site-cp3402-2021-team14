@@ -24,8 +24,8 @@ function cp3402_2021_team14_theme_custom_header_setup() {
 			array(
 				'default-image'      => '',
 				'default-text-color' => 'ffffff',
-				'width'              => 2000,
-				'height'             => 250,
+				'width'              => 4000,
+				'height'             => 500,
 				'flex-height'        => true,
 				'wp-head-callback'   => 'cp3402_2021_team14_theme_header_style',
 			)
