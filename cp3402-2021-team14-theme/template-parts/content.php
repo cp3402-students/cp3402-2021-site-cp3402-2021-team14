@@ -24,6 +24,7 @@
 				<?php
 				cp3402_2021_team14_theme_posted_on();
 				cp3402_2021_team14_theme_posted_by();
+				cp3402_2021_team14_theme_edit_button();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
@@ -58,6 +59,7 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
+        <?php cp3402_2021_team14_theme_category_list(); ?> <br>
 		<?php cp3402_2021_team14_theme_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

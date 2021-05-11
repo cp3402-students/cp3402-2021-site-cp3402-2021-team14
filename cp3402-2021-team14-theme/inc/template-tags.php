@@ -27,7 +27,7 @@ if ( ! function_exists( 'cp3402_2021_team14_theme_posted_on' ) ) :
 
 		$posted_on = sprintf(
 			/* translators: %s: post date. */
-			esc_html_x( 'Posted on %s', 'post date', 'cp3402-2021-team14-theme' ),
+			esc_html_x( 'Published on %s', 'post date', 'cp3402-2021-team14-theme' ),
 			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 		);
 
@@ -52,6 +52,25 @@ if ( ! function_exists( 'cp3402_2021_team14_theme_posted_by' ) ) :
 	}
 endif;
 
+function cp3402_2021_team14_theme_edit_button() {
+    edit_post_link(
+        sprintf(
+            wp_kses(
+            /* translators: %s: Name of current post. Only visible to screen readers */
+                __( ' Edit <span class="screen-reader-text">%s</span>', 'cp3402-2021-team14-theme' ),
+                array(
+                    'span' => array(
+                        'class' => array(),
+                    ),
+                )
+            ),
+            wp_kses_post( get_the_title() )
+        ),
+        '<span class="edit-link">',
+        '</span>'
+    );
+}
+
 if ( ! function_exists( 'cp3402_2021_team14_theme_entry_footer' ) ) :
 	/**
 	 * Prints HTML with meta information for the categories, tags and comments.
@@ -59,12 +78,12 @@ if ( ! function_exists( 'cp3402_2021_team14_theme_entry_footer' ) ) :
 	function cp3402_2021_team14_theme_entry_footer() {
 		// Hide category and tag text for pages.
 		if ( 'post' === get_post_type() ) {
-			/* translators: used between list items, there is a space after the comma */
-			$categories_list = get_the_category_list( esc_html__( ', ', 'cp3402-2021-team14-theme' ) );
-			if ( $categories_list ) {
-				/* translators: 1: list of categories. */
-				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'cp3402-2021-team14-theme' ) . '</span>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-			}
+//			/* translators: used between list items, there is a space after the comma */
+//			$categories_list = get_the_category_list( esc_html__( ', ', 'cp3402-2021-team14-theme' ) );
+//			if ( $categories_list ) {
+//				/* translators: 1: list of categories. */
+//				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'cp3402-2021-team14-theme' ) . '</span>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+//			}
 
 			/* translators: used between list items, there is a space after the comma */
 			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'cp3402-2021-team14-theme' ) );
@@ -93,24 +112,20 @@ if ( ! function_exists( 'cp3402_2021_team14_theme_entry_footer' ) ) :
 			echo '</span>';
 		}
 
-		edit_post_link(
-			sprintf(
-				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Edit <span class="screen-reader-text">%s</span>', 'cp3402-2021-team14-theme' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				wp_kses_post( get_the_title() )
-			),
-			'<span class="edit-link">',
-			'</span>'
-		);
 	}
 endif;
+
+function cp3402_2021_team14_theme_category_list() {
+
+    $categories_list = get_the_category_list( esc_html__( ', ', 'cp3402-2021-team14-theme' ) );
+    if ( $categories_list ) {
+        /* translators: 1: list of categories. */
+        printf( '<span class="cat-links">' . esc_html__( '%1$s', 'cp3402-2021-team14-theme' ) . '</span>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+    }
+
+
+}
+
 
 if ( ! function_exists( 'cp3402_2021_team14_theme_post_thumbnail' ) ) :
 	/**
