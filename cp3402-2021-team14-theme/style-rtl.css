@@ -127,6 +127,7 @@ pre {
  */
 a {
 	background-color: transparent;
+	text-decoration: none;
 }
 
 /**
@@ -534,6 +535,7 @@ table {
 --------------------------------------------- */
 a {
 	color: #4169e1;
+	text-decoration: none;
 }
 
 a:visited {
