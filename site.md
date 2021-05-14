@@ -44,7 +44,7 @@
 
 3. If your year is earlier than 2018, you will need to insert an "else if" statement above the "else" statement eg.
 
-   else if($\_POST['yearSelect'] == '2017') {
+   else if($_POST['yearSelect'] == '2017') {
 
    ```
        echo do_shortcode('[foogallery id="  "]');
