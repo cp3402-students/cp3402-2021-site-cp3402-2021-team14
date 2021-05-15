@@ -140,6 +140,10 @@ add_action( 'widgets_init', 'cp3402_2021_team14_theme_widgets_init' );
  * Enqueue scripts and styles.
  */
 function cp3402_2021_team14_theme_scripts() {
+
+    // Enqueue Google Fonts: Source Sans Pro, PT Seriff and Limelight
+    wp_enqueue_style('jazzclub-fonts','https://fonts.googleapis.com/css2?family=Limelight&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,200;0,700;1,400&display=swap' );
+
 	wp_enqueue_style( 'cp3402-2021-team14-theme-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'cp3402-2021-team14-theme-style', 'rtl', 'replace' );
 

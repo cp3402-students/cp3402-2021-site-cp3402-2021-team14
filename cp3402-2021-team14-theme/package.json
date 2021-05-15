@@ -18,7 +18,10 @@
   },
   "devDependencies": {
     "@wordpress/scripts": "^12.1.0",
+    "browser-sync": "^2.26.14",
     "dir-archiver": "^1.1.1",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
     "node-sass": "^4.14.1",
     "rtlcss": "^2.5.0"
   },
