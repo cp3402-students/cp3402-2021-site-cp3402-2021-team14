@@ -10,3 +10,9 @@
 The goal of our project is to modernize the jazztownsville.com site making it more exciting and attractive to a younger audience.
 
 ### Reference
+
+### Links
+
+[deployment.md](https://github.com/cp3402-students/cp3402-2021-site-cp3402-2021-team14/blob/main/deployment.md)
+[site.md](https://github.com/cp3402-students/cp3402-2021-site-cp3402-2021-team14/blob/main/site.md)
+[theme.md]()
