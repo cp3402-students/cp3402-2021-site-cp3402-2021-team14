@@ -59,3 +59,16 @@
 8. Update to save code. This should update the Shortcode in Our Jazz Club page. Test the site.
 
 ---
+
+
+#### 4. Creating a Post
+
+The posts can be found on the 'Program' page and are designed to provide updates and display all past and upcoming events. 
+
+1. In the 'Add New Post' editor, there is the option for re-usable blocks for the following post formats:
+	a. Concert advertising post containing an image.
+	b. Concert advertising post without an image.
+2. Categories for posts include:
+	a. Concert advertising post
+	b. Festival advertising post
+	c. Band/s involved in the event
