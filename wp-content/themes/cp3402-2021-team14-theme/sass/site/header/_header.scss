@@ -1,0 +1,52 @@
+.header-image {
+  max-height: 60vh;
+  overflow: hidden;
+  margin: 0;
+
+  img {
+    display: block;
+    width: 100vw;
+  }
+}
+
+.site-header {
+  position: relative;
+  color: #fff;
+  background-color: $color__skin;
+  justify-content: space-around;
+}
+
+.main-navigation {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  justify-content: space-around;
+}
+
+
+.main-navigation ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin-left: 2px;
+  margin-right: 2px;
+  background-color: lighten($color__skin, 10%);
+}
+
+.site-title {
+  margin: 0.5px;
+  position: static;
+}
+
+.site-description {
+  margin: 0.5px;
+  position: static;
+  font-style: italic;
+}
+
+.site-branding {
+  min-height: 80px;
+  padding-left: 1em;
+  padding-right: 1em;
+  }
+
+

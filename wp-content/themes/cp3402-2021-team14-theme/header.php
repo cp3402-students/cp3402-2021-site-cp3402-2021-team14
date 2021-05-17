@@ -28,23 +28,43 @@
     <!-- used for accessibility purposes -->
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'cp3402-2021-team14-theme' ); ?></a>
 
-	<header id="masthead" class="site-header">
+    <div id="page" class="site">
+        <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'humescores' ); ?></a>
+
+        <?php if ( get_header_image() ) : ?>
+            <figure class="header-image">
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                    <img src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="">
+                </a>
+            </figure><!-- .header-image -->
+        <?php endif; // End header image check. ?>
+
+        <header id="masthead" class="site-header">
 		<div class="site-branding"><!-- contains site title and description -->
 
-			<?php
+            <!-- if homepage, display site name in H1 size  Remove these to not show site name -->
+            <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 
-			//shows the logo top left
+            <?php
+
+            //shows the logo top left
             the_custom_logo();
 
-			//add "Just another WordPress site"
-			$cp3402_2021_team14_theme_description = get_bloginfo( 'description', 'display' );
+            //add "Just another WordPress site"
+            $cp3402_2021_team14_theme_description = get_bloginfo( 'description', 'display' );
 
-			if ( $cp3402_2021_team14_theme_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $cp3402_2021_team14_theme_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif;
-			?>
-		</div><!-- .site-branding -->
+            if ( $cp3402_2021_team14_theme_description || is_customize_preview() ) :
+                ?>
+
+                <p class="site-description"><?php echo $cp3402_2021_team14_theme_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+            <?php endif;
+            ?>
+
+
+
+		</div>
+
+        <!-- .site-branding -->
 
         <!-- navigation -->
 		<nav id="site-navigation" class="main-navigation"><!-- contains navigation -->
@@ -59,28 +79,11 @@
 				)
 			);
 			?>
+
+
 		</nav><!-- #site-navigation -->
 
-        <?php
 
-        //check whether page is home page
-        if ( is_front_page() ) : //had to remove "&& is_home()" from if statement after adding HOME page for the statement to work
-            ?>
-            <!-- if homepage, display site name in H1 size  Remove these to not show site name -->
-            <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-
-            <!-- show logo image -->
-            <?php the_header_image_tag(); ?>
-
-        <?php
-        //if not home page
-        else :
-            ?>
-            <!-- if not home page, display site name in paragraph size -->
-            <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-        <?php
-        endif;
-        ?>
 
 	</header><!-- #masthead -->
 
