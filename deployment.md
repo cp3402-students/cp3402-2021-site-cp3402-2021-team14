@@ -5,7 +5,7 @@ Staging site is on a Google Cloud instance at [http://34.87.208.124/]()
 To gain access with FileZilla, we will need to add a public key to the
 Google Cloud instance and the corresponding private key to FileZilla.
 
-To generate a key with puttygen:
+To generate a new key with puttygen:
 
 - Download and install puttygen
 - Open puttygen and click on the Generate button. Move cursor as instructed.
