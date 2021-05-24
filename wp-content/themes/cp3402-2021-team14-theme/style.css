@@ -471,11 +471,9 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-  color: #4169e1; }
-  a:visited {
-    color: #800080; }
+  color: #404040; }
   a:hover, a:focus, a:active {
-    color: #191970; }
+    color: #cc9900; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -617,12 +615,13 @@ textarea {
   .posts-navigation .nav-links a,
   .post-navigation .nav-links a {
     padding: 10px;
-    background-color: #666b6e;
+    background-color: #cc9900;
     color: white; }
     .comment-navigation .nav-links a:hover,
     .posts-navigation .nav-links a:hover,
     .post-navigation .nav-links a:hover {
-      background-color: #c6a23f; }
+      background-color: #e3e3e3;
+      color: #cc9900; }
 
 .comment-navigation .nav-subtitle,
 .posts-navigation .nav-subtitle,
@@ -825,15 +824,31 @@ textarea {
 .hentry {
   margin: 0 0 1.5em; }
 
+.site-main {
+  margin-left: 2.5%; }
+
+.site-main-program {
+  width: 75%; }
+  .site-main-program a {
+    text-decoration: underline;
+    text-decoration-color: #cc9900; }
+
+@media screen and (min-width: 720px) {
+  #program-secondary {
+    width: 25%;
+    right: 0;
+    position: fixed; } }
+
 .cat-links a {
   border-right: 10px;
   text-decoration: none;
   text-transform: uppercase;
   padding: 5px;
-  background-color: #666b6e;
+  background-color: #cc9900;
   color: white; }
   .cat-links a:hover {
-    background-color: #c6a23f; }
+    background-color: #e3e3e3;
+    color: #cc9900; }
 
 .entry-title {
   margin: .125em 0 .25em; }

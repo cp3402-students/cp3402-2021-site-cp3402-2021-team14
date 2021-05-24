@@ -9,7 +9,7 @@
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.0' );
+	define( '_S_VERSION', '1.7' );
 }
 
 if ( ! function_exists( 'cp3402_2021_team14_theme_setup' ) ) :
@@ -133,6 +133,18 @@ function cp3402_2021_team14_theme_widgets_init() {
 			'after_title'   => '</h2>',
 		)
 	);
+
+    register_sidebar(
+        array(
+            'name'          => esc_html__( 'Program Sidebar', 'cp3402-2021-team14-theme' ),
+            'id'            => 'sidebar-2',
+            'description'   => esc_html__( 'Add widgets here.', 'cp3402-2021-team14-theme' ),
+            'before_widget' => '<section id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</section>',
+            'before_title'  => '<h2 class="widget-title">',
+            'after_title'   => '</h2>',
+        )
+    );
 }
 add_action( 'widgets_init', 'cp3402_2021_team14_theme_widgets_init' );
 
@@ -181,4 +193,26 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+function festivalPosts() {
+    $args = array( 'posts_per_page' => 1, 'category_name' => 'festival');
+    $festival_posts_query = new WP_Query( $args );
+    while($festival_posts_query->have_posts()) :
+        $festival_posts_query->the_post();
+        get_template_part( 'template-parts/content', get_post_type() );
+//        $link = get_permalink();
+//        $title = get_the_title();
+//        $date = get_the_date();
+//
+//        $content .= '<div class="latest-posts">';
+//        $content .= '<h3><a href='.$link.' target="_top">'.$title.' /' .$date. '</a></h3>';
+//        $content .= '<p class="excerpt">' .get_the_excerpt(). '</p>';
+//        $content .= '</div>';
+
+    endwhile;
+
+//    return $content;
+}
+
+add_shortcode('festivalPosts', 'festivalPosts');
 

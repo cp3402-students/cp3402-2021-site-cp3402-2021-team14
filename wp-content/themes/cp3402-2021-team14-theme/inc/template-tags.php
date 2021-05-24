@@ -117,7 +117,7 @@ endif;
 
 function cp3402_2021_team14_theme_category_list() {
 
-    $categories_list = get_the_category_list( esc_html__( ', ', 'cp3402-2021-team14-theme' ) );
+    $categories_list = get_the_category_list( esc_html__( ' ', 'cp3402-2021-team14-theme' ) );
     if ( $categories_list ) {
         /* translators: 1: list of categories. */
         printf( '<span class="cat-links">' . esc_html__( '%1$s', 'cp3402-2021-team14-theme' ) . '</span>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped

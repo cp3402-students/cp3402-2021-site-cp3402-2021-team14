@@ -16,6 +16,17 @@
 	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
 }
 
+.site-main-program {
+	width: 75%;
+}
+
+//sidebar from program page
+#program-secondary {
+	position: fixed;
+	right: 0px;
+
+}
+
 .widget-area {
 	grid-area: sidebar;
 }

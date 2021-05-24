@@ -10,7 +10,7 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+	<main id="primary" class="site-main site-main-program">
 
 		<?php
 		while ( have_posts() ) :
@@ -25,8 +25,6 @@ get_header();
 				)
 			);
 
-            get_sidebar('sidebar-program');
-
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) :
 				comments_template();
@@ -38,5 +36,4 @@ get_header();
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
 get_footer();
