@@ -6,6 +6,25 @@
 	margin: 0 0 1.5em;
 }
 
+.cat-links {
+	a {
+		border-right: 10px;
+		text-decoration: none;
+		text-transform: uppercase;
+		padding: 5px;
+		background-color: $color__cat-links-default;
+		color: white;
+
+		&:hover {
+			background-color: $color__cat-links-hover;
+		}
+	}
+}
+
+.entry-title {
+	margin: .125em 0 .25em;
+}
+
 .byline,
 .updated:not(.published){
 	display: none;
@@ -20,7 +39,6 @@
 .entry-content,
 .entry-summary {
 	margin: 1.5em 0 0;
-	padding: $text__padding;
 }
 
 .page-links {

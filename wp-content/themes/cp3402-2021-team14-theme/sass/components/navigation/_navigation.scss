@@ -96,6 +96,19 @@
 
 	.nav-links {
 		display: flex;
+		a {
+			padding: 10px;
+			background-color: $color__cat-links-default;
+			color: white;
+
+			&:hover {
+				background-color: $color__cat-links-hover;
+			}
+		}
+	}
+
+	.nav-subtitle {
+		font-weight: bold;
 	}
 
 	.nav-previous {
