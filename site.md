@@ -73,6 +73,8 @@ The posts can be found on the 'Program' page and are designed to provide updates
 	b. Festival advertising post
 	c. Band/s involved in the event
 			     
+---			     
+			     
 #### 5. Adding a new band to the Bands Landing page
 
 All the bands can be found on the Bands page that is designed to display the bands participating in the Jazz Club.
