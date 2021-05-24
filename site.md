@@ -72,3 +72,18 @@ The posts can be found on the 'Program' page and are designed to provide updates
 	a. Concert advertising post
 	b. Festival advertising post
 	c. Band/s involved in the event
+			     
+#### 5. Adding a new band to the Bands Landing page
+			     
+	All the bands can be found on the Bands page that is designed to display the bands participating in the Jazz Club. 
+			     
+	1. In the 'Page' editor, click on Bands page and edit. The page is divided into two columns (30/70). 
+		Left column (30) is for Upcoming events, Right column (70) is for the bands.
+	2. Upcoming Events column is automatically updated when new posts about events are added in the Programs page. 
+	3. In the Right column, each band is created in a block. Click on the 'Add block' button, select 'Heading' to add a new band's name.
+	4. Click on 'Link' on the toolbar to link the heading to the specific band's page (if page is created).
+	5. Click on the 'Add block' button again and select paragraph and list the band members.
+	6. Select 'Add Block' again to insert an image of the band.
+	7. Lastly, 'Add block' again, select button to create a button and type 'See More', select 'Link' to link the button to the specific band page. 
+	8. Update to save changes and refresh site to see changes.
+
