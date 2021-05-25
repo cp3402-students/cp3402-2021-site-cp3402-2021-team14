@@ -60,7 +60,6 @@
 
 ---
 
-
 #### 4. Creating a Post
 
 The posts can be found on the 'Program' page and are designed to provide updates and display all past and upcoming events. 
@@ -73,9 +72,11 @@ The posts can be found on the 'Program' page and are designed to provide updates
 	b. Festival advertising post.
 	c. Band/s involved in the event.
    
+---
+   
 #### 5. Altering the Custom Sidebar
 
-The custom sidebar on the program page is designed to sit to the side of the page and feature buttons. It currently features a menu widget displaying a secondary navigation element.
+The custom sidebar on the 'Program' page is designed to sit to the side of the page and feature buttons. It currently features a menu widget displaying a secondary navigation element.
 
 To change the buttons:
 1. In the WordPress Admin Panel, go to Appearance > Menus.
