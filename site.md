@@ -54,7 +54,7 @@
 
 4. The ShortCode id number for your new gallery needs to be added to the above echo command.
 5. If your year is later than 2021, you need to put your gallery ShortCode in 2 places
-6. Firstly, the 2021"if" command becomes an "else if" command and the new "if" command will contain your gallery ShortCode
+6. Firstly, the 2021 "if" command becomes an "else if" command and the new "if" command will contain your gallery ShortCode
 7. Secondly, the "else" command must also contain your gallery ShortCode so the latest gallery opens when page is first accessed
 8. Update to save code. This should update the Shortcode in Our Jazz Club page. Test the site.
 
