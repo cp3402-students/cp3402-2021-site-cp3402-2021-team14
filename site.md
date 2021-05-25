@@ -69,13 +69,27 @@ The posts can be found on the 'Program' page and are designed to provide updates
 	a. Concert advertising post containing an image.
 	b. Concert advertising post without an image.
 2. Categories for posts include:
-	a. Concert advertising post
-	b. Festival advertising post
-	c. Band/s involved in the event
+	a. Concert advertising post.
+	b. Festival advertising post.
+	c. Band/s involved in the event.
+   
+#### 5. Altering the Custom Sidebar
+
+The custom sidebar on the program page is designed to sit to the side of the page and feature buttons. It currently features a menu widget displaying a secondary navigation element.
+
+To change the buttons:
+1. In the WordPress Admin Panel, go to Appearance > Menus.
+2. Select the "Program Sidebar" menu from the drop down list.
+3. Any site pages on this list will appear in the sidebar and in the order provided in this menu. 
+
+As this is a standard WordPress Widget sidebar, other widgets can also be added:
+1. Ensure you are logged into the Admin panel, and navigate to the Program page to customise it.
+2. Open Widgets > Program Sidebar and add any additional widgets. 
+   a. Note that on smaller windows this sidebar will appear at the top of the page, so it's best not to make it too long.
 			     
 ---			     
 			     
-#### 5. Adding a new band to the Bands Landing page
+#### 6. Adding a new band to the Bands Landing page
 
 All the bands can be found on the Bands page that is designed to display the bands participating in the Jazz Club.
 	

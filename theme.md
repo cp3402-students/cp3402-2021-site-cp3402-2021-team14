@@ -11,6 +11,7 @@
   - Click the pencil to display code and edit
   
 #### Program Page Features
+- Interactive elements are underlined and react on hover. This is for clarity as this page may feature a lot of text.
 
 ##### Program Page Sidebar
 - The program page features a custom sidebar so that it may work separately from the default sidebar if implemented.
@@ -27,7 +28,7 @@
 #######Index page
 - Since the Program page is the posts page, it utilises "index.php" to build the page. 
 - An additional class ("site-main-program") has been provided to control the size of the content to allow space for the sidebar. 
-  - This allows for page wide styling without affecting the other pages, as they use the default "site-page" class.
+  - This allows for page-wide styling without affecting the other pages, as they use the default "site-page" class.
 
 ##### Festivals Page
 - The festivals page uses a shortcode block to action a function titled "festivalPosts".
