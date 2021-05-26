@@ -422,7 +422,7 @@ big {
 /* Elements
 --------------------------------------------- */
 body {
-  background: #f1eab4; }
+  background: #ffffff; }
 
 hr {
   background-color: #ccc;
@@ -560,19 +560,24 @@ textarea {
 --------------------------------------------- */
 .main-navigation {
   display: block;
-  width: 100%; }
+  width: 100%;
+  background-color: #f1eab4; }
   .main-navigation ul {
-    display: none;
+    display: block;
     list-style: none;
     margin: 0;
-    padding-left: 0; }
+    padding-left: 0;
+    justify-content: space-around;
+    background-color: #f1eab4; }
     .main-navigation ul ul {
+      background-color: #c99400;
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
       position: absolute;
       top: 100%;
       left: -999em;
-      z-index: 99999; }
+      z-index: 99999;
+      display: block; }
       .main-navigation ul ul ul {
         left: -999em;
         top: 0; }
@@ -755,43 +760,36 @@ textarea {
 .header-image {
   max-height: 60vh;
   overflow: hidden;
-  margin: 0; }
+  margin: 0;
+  position: relative; }
   .header-image img {
     display: block;
-    width: 100vw; }
+    width: 100vw;
+    opacity: 0.5; }
 
 .site-header {
   position: relative;
-  color: #fff;
-  background-color: #d0d0d0;
+  background-color: #f1eab4;
   justify-content: space-around; }
-
-.main-navigation {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  justify-content: space-around; }
-
-.main-navigation ul {
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
-  margin-left: 2px;
-  margin-right: 2px;
-  background-color: #eaeaea; }
 
 .site-title {
   margin: 0.5px;
-  position: static; }
+  position: static;
+  opacity: 0.9; }
 
 .site-description {
   margin: 0.5px;
   position: static;
-  font-style: italic; }
+  font-style: italic;
+  opacity: 0.9; }
 
 .site-branding {
   min-height: 80px;
   padding-left: 1em;
   padding-right: 1em; }
+
+.header-info {
+  position: absolute; }
 
 /*--------------------------------------------------------------
 ## Footer
@@ -805,7 +803,7 @@ textarea {
   padding: 1em;
   font-family: "Source Sans Pro", "Lucida Grande", Geneva, Arial;
   color: #fff;
-  background-color: #d0d0d0; }
+  background-color: #f1eab4; }
   @media screen {
     .site-footer {
       padding: 1em 2em; } }
@@ -824,10 +822,8 @@ textarea {
 .hentry {
   margin: 0 0 1.5em; }
 
-.site-main {
-  margin-left: 2.5%; }
-
 .site-main-program {
+  margin-left: 2.5%;
   width: 75%; }
   .site-main-program a {
     text-decoration: underline;
@@ -837,15 +833,24 @@ textarea {
   #program-secondary {
     width: 25%;
     right: 0;
-    position: fixed; } }
+    position: fixed;
+    background-color: #404040;
+    color: #fff; }
+    #program-secondary ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+    #program-secondary a {
+      text-decoration: none; } }
 
 .cat-links a {
   border-right: 10px;
   text-decoration: none;
   text-transform: uppercase;
   padding: 5px;
-  background-color: #cc9900;
-  color: white; }
+  background-color: #ffcc33;
+  color: white;
+  border-radius: 5px; }
   .cat-links a:hover {
     background-color: #e3e3e3;
     color: #cc9900; }
