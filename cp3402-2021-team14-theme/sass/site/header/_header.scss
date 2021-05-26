@@ -1,0 +1,44 @@
+.header-image {
+  max-height: 60vh;
+  overflow: hidden;
+  margin: 0;
+  position: relative;
+
+  img {
+    display: block;
+    width: 100vw;
+    opacity: 0.5;
+  }
+}
+
+.site-header {
+  position: relative;
+  background-color: $color__skin;
+  justify-content: space-around;
+}
+
+  .site-title {
+    margin: 0.5px;
+    position: static;
+    opacity: 0.9;
+  }
+
+  .site-description {
+    margin: 0.5px;
+    position: static;
+    font-style: italic;
+    opacity: 0.9;
+  }
+
+  .site-branding {
+    min-height: 80px;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .header-info {
+    position: absolute;
+  }
+
+
+
