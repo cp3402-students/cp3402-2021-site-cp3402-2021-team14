@@ -833,9 +833,7 @@ textarea {
   #program-secondary {
     width: 25%;
     right: 0;
-    position: fixed;
-    background-color: #404040;
-    color: #fff; }
+    position: fixed; }
     #program-secondary ul {
       list-style-type: none;
       margin: 0;
