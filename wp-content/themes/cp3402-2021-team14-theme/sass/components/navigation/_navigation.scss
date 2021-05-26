@@ -46,14 +46,17 @@
 		li:hover > ul,
 		li.focus > ul {
 			left: auto;
+			display: block;
 		}
 	}
 
 	li {
 		position: relative;
+		display: block;
 
 		&:hover > a,
 		&.focus > a {
+			display: block;
 		}
 	}
 

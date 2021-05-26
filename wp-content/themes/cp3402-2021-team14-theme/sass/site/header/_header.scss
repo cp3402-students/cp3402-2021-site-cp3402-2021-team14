@@ -2,10 +2,12 @@
   max-height: 60vh;
   overflow: hidden;
   margin: 0;
+  position: relative;
 
   img {
     display: block;
     width: 100vw;
+    opacity: 0.5;
   }
 }
 
@@ -16,37 +18,28 @@
   justify-content: space-around;
 }
 
-.main-navigation {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  justify-content: space-around;
-}
-
-
-.main-navigation ul {
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
-  margin-left: 2px;
-  margin-right: 2px;
-  background-color: lighten($color__skin, 10%);
-}
-
-.site-title {
-  margin: 0.5px;
-  position: static;
-}
-
-.site-description {
-  margin: 0.5px;
-  position: static;
-  font-style: italic;
-}
-
-.site-branding {
-  min-height: 80px;
-  padding-left: 1em;
-  padding-right: 1em;
+  .site-title {
+    margin: 0.5px;
+    position: static;
+    opacity: 0.9;
   }
+
+  .site-description {
+    margin: 0.5px;
+    position: static;
+    font-style: italic;
+    opacity: 0.9;
+  }
+
+  .site-branding {
+    min-height: 80px;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .header-info {
+    position: absolute;
+  }
+
 
 
