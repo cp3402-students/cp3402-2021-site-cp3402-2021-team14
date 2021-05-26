@@ -6,11 +6,8 @@
 	margin: 0 0 1.5em;
 }
 
-.site-main {
-	margin-left: 2.5%;
-}
-
 .site-main-program {
+	margin-left: 2.5%;
 	width: 75%;
 	a {					//add underlines to links on the posts page only (else they get added to buttons on other pages as well)
 		text-decoration: underline;
@@ -24,6 +21,18 @@
 		width: 25%;
 		right: 0;
 		position: fixed;
+		background-color: $color__program-sidebar-background;
+		color: $color__program-sidebar-text;
+
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		a {
+			text-decoration: none;
+		}
 	}
 }
 
@@ -34,8 +43,9 @@
 		text-decoration: none;
 		text-transform: uppercase;
 		padding: 5px;
-		background-color: $color__cat-links-default;
+		background-color: lighten($color__cat-links-default, 20%);
 		color: white;
+		border-radius: 5px;
 
 		&:hover {
 			background-color: $color__cat-links-hover;
